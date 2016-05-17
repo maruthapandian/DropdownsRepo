@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title> Demo4 HTML</title>
+	<script language="javascript" src="config8.js"></script>
+</head>
+<body>
+	<fieldset>
+		Select your value in this dropdown: 
+		<!--select name="combo" id="combo" autocomplete="off" onChange="configdropdown(this,document.getElementById('combo2'))"-->
+		<select name="combo" id="combo" onChange="configdropdown(this,document.getElementById('combo2'))">
+			<option value="opt0" ="selected">Select an option</option>
+			<option value="opt1">Option1</option>
+			<option value="opt2">Option2</option>
+		</select>
+		
+		<select name="combo2" id="combo2" onChange="configdropdown(this,document.getElementById('combo3'))"> </select>
+		
+		<select name="combo3" id="combo3"> </select>
+		
+		<input type="button" id="btn1" value="Submit" onClick="subbttn(document.getElementById('combo'),document.getElementById('combo2'),document.getElementById('combo3'))"> </input>
+		<br/>
+		<!--input type="text" id="txtbox" value=""> </input-->
+		<input type="text" id="txtbox" value=""> </input>
+		<div> <textarea id="txtarea" rows="10" cols="100">Write something here </textarea></div>
+	</fieldset>
+</body>
+</html>
