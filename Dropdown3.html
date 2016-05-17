@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title> Demo3 HTML addEventlistener </title>
+	<!--script language="javascript" src="config3.js"></script-->
+</head>
+<body>
+	<fieldset>
+		Select your value in this dropdown: 
+		<!--select name="combo" id="combo">
+			<option value="opt1">Option1</option>
+			<option value="opt2">Option2</option>
+		</select-->
+		<input type="text" id="txtbx1" value=""/>
+		<input type="text" id="txtbox" value=""/>
+	</fieldset>
+	<script>
+	document.getElementById("txtbx1").addEventListener("change",myfun);
+
+	function myfun()
+	{
+		var x = document.getElementById("txtbx1");
+		var y = document.getElementById("txtbox");
+		y.value = x.value;
+	}
+	</script>
+</body>
+</html>
