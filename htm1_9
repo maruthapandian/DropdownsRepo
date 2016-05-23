@@ -1,0 +1,37 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title> Demo4 HTML</title>
+	<script language="javascript" src="multimap.js"></script>
+	<script language="javascript" src="envDeclarations.js"></script>
+	<script language="javascript" src="mutilmapDemo.js"></script>
+	<script language="javascript" src="config9.js"></script>
+	
+</head>
+<body>
+	<fieldset>
+		Select your value in this dropdown: 
+		<!--select name="combo" id="combo" autocomplete="off" onChange="configdropdown(this,document.getElementById('combo2'))"-->
+		<select name="combo" id="combo" onChange="configdropdown(this,document.getElementById('combo2'))">
+			<option value="opt0" selected="selected">Select an option</option>
+			<option value="opt1">Option1</option>
+			<option value="opt2">Option2</option>
+		</select>
+		
+		<select name="combo2" id="combo2" onChange="configdropdown(this,document.getElementById('combo3'))"> </select>
+		
+		<select name="combo3" id="combo3"> </select>
+		
+		<input type="button" id="btn1" value="Submit" onClick="subbttn(document.getElementById('combo'),document.getElementById('combo2'),document.getElementById('combo3')
+		,document.getElementById('combo4'),document.getElementById('combo5'),document.getElementById('combo6'))"> </input>
+		<br/>
+		<!--input type="text" id="txtbox" value=""> </input-->
+		<input type="text" id="txtbox" value=""> </input>
+		<div> <br/> <select name="combo4" id="combo3"> </select> 
+		<select name="combo4" id="combo5"> </select>
+		<select name="combo5" id="combo6"> </select>
+		</div>
+		<div> <br/><textarea id="txtarea" rows="10" cols="100">Write something here </textarea></div>
+	</fieldset>
+</body>
+</html>
